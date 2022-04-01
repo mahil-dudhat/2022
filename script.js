@@ -5,15 +5,15 @@ console.log(canvas)
 
 const geometry = new THREE.BoxGeometry(3,3,3)
 
-const material = new THREE.MeshBasicMaterial({color : 0xff0000})
+const material = new THREE.MeshBasicMaterial({color : 0x195190})
 
 const axesHelper = new THREE.AxesHelper( 25 );
-scene.add( axesHelper );
+//scene.add( axesHelper );
 
 const mesh = new THREE.Mesh(geometry,material)
 
 const plane_geo = new THREE.PlaneGeometry( 250 , 100 )
-const plane_mate = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+const plane_mate = new THREE.MeshBasicMaterial( {color: 0x919398} );
 const plane = new THREE.Mesh( plane_geo, plane_mate );
 plane.position.z =  -50
 scene.add( plane );
